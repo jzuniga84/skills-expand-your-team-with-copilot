@@ -554,16 +554,16 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="social-share-buttons">
         <span class="share-label">Share:</span>
-        <button class="share-button facebook-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" title="Share on Facebook">
+        <button class="share-button facebook-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" title="Share on Facebook" aria-label="Share on Facebook">
           📘
         </button>
-        <button class="share-button twitter-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" title="Share on Twitter">
+        <button class="share-button twitter-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" title="Share on Twitter" aria-label="Share on Twitter">
           🐦
         </button>
-        <button class="share-button email-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" data-schedule="${formattedSchedule.replace(/"/g, '&quot;')}" title="Share via Email">
+        <button class="share-button email-share" data-activity="${name}" data-description="${details.description.replace(/"/g, '&quot;')}" data-schedule="${formattedSchedule.replace(/"/g, '&quot;')}" title="Share via Email" aria-label="Share via Email">
           ✉️
         </button>
-        <button class="share-button copy-link" data-activity="${name}" title="Copy Link">
+        <button class="share-button copy-link" data-activity="${name}" title="Copy Link" aria-label="Copy link to clipboard">
           🔗
         </button>
       </div>
