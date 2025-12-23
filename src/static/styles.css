@@ -93,9 +93,7 @@ header {
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
 }
 
 header h1 {
@@ -647,10 +645,18 @@ footer {
 }
 
 /* User controls in header */
-#user-controls {
+.header-controls {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#user-controls {
+  display: flex;
+  align-items: center;
 }
 
 #user-status {
@@ -701,9 +707,6 @@ footer {
 
 /* Dark mode toggle button */
 #dark-mode-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 20px;
@@ -723,9 +726,4 @@ footer {
 
 #dark-mode-toggle .icon {
   font-size: 1rem;
-}
-
-/* Adjust user controls position when dark mode toggle is present */
-#user-controls {
-  right: 120px;
 }
